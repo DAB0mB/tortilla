@@ -5,6 +5,3 @@ node_js:
 before_install:
   - apt-get install realpath
 script: "npm test"
-branches:
-  only:
-  - master
