@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "8.0"
 before_install:
+  - sudo add-apt-repository ppa:git-core/ppa
+  - sudo apt-get update
   - sudo apt-get install realpath
-  - sudo apt-get install git=2.7.4
+  - sudo apt-get install git
 script: "npm test"
